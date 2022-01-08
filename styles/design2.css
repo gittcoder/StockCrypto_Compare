@@ -1,0 +1,135 @@
+/* .load{
+  display:block;
+  position:relative;
+  font-size:34px;
+  top:30%;
+  left:45%;
+  color:rgb(182, 175, 175)
+}
+.circle{
+  display:block;
+  position:relative;
+  top:30%;
+  left:45%;
+width: 100px;
+height: 100px;
+border: 10px solid rgba(255,255,255,0.2);
+border-radius: 50%;
+border-top-color: #fff;
+animation: spin 1s linear infinite;
+} */
+.up_box{
+  position: relative;
+  left: 62.75%;
+  width: 550px;
+  height: 250px;
+  background-color:rgb(42, 41, 58);
+  border-radius:10px;
+  opacity:0.95;
+}
+.graph{
+  position: relative;
+  top: 150px; 
+  left:3.5%;
+  width: 150px;
+  height: 150px;
+}
+
+/* .formfield{
+    
+} */
+
+.submitbutton{
+    position: relative;
+    top:50px;
+    left: 57%;
+}
+
+
+
+input[type=text] {
+    position: relative;
+    top: 35px; 
+    left: 10%;
+    color:white;
+    width:220px;
+    border: 2px solid green;
+    padding: 15px 20px;
+    border-radius: 4px;
+    background-color: #0e3158;
+    color: white;
+  }
+  
+.but {
+    display: inline-block;
+    padding: 15px 25px;
+    width:205px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 15px;
+  }
+  
+  
+.but:hover {background-color: red}
+  
+  
+.but:active {
+    background-color: red;
+  }
+
+  * {box-sizing:border-box}
+
+  
+  * {box-sizing:border-box}
+
+ 
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  top:50px;
+  left:27%;
+  height:400px;
+  width: 600px;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.wel_text{
+  position:relative;
+  top:50%;
+  color:white;
+  font-size:20px;
+  text-align: center;
+}
+
+
+.sel_crypto{
+  position:relative;
+  width: 220px;
+  left:10%;
+  border: 2px solid green;
+  padding: 15px 20px;
+  border-radius: 4px;
+  background-color: #0e3158;
+  color: rgb(143, 139, 139);
+}
+
+.sel_date{
+  position:relative;
+  top:20px;
+  width: 220px;
+  left:10%;
+  border: 2px solid green;
+  padding: 15px 20px;
+  border-radius: 4px;
+  background-color: #0e3158;
+  color: rgb(143, 139, 139);
+}
+

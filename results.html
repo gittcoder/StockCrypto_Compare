@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOCK COMPARE</title>
+    <link rel="stylesheet" href="styles/results.css">
+    <script src="scripts/net.js"></script>
+    <script src="scripts/slides.js"></script>
+    <script src="scripts/results.js"></script>
+    <style>
+        body{
+          background-image: url('images/bg.png');
+        }
+    </style>
+    
+</head>
+<body>
+  <div class="graph">
+  <img src="images/sample.png" style="width:620%"alt="No image available">
+</div>
+
+<div class="up_box">
+  <form id="frm1">
+
+    
+
+    <div class="formfield">
+    <input type="text" name="fname" placeholder="Enter Stock/Code"><br>
+    </div>
+
+    <div class="submitbutton">
+      <button class = "but" id="get_stock" type="submit" value="Submit">ADD</button>
+      </div>
+    
+      <div class="select_crypto">
+        <select id="sel_crypto" class="sel_crypto" name="sel_crypto">
+        <option value="Select Crypto">Select Crypto</option>
+        <option value="algorand">algorand</option>
+        <option value="avalanche-2">avalanche-2</option>
+        <option value="axie-infinity">axie-infinity</option>
+        <option value="binance-usd">binance-usd</option>
+        <option value="binancecoin">binancecoin</option>
+        <option value="bitcoin">bitcoin</option>
+        <option value="bitcoin-cash">bitcoin-cash</option>
+        <option value="cardano">cardano</option>
+        <option value="cdai">cdai</option>
+        <option value="chainlink">chainlink</option>
+        <option value="compound-ether">compound-ether</option>
+        <option value="cosmos">cosmos</option>
+        <option value="crypto-com-chain">crypto-com-chain</option>
+        <option value="dai">dai</option>
+        <option value="decentraland">decentraland</option>
+        <option value="dogecoin">dogecoin</option>
+        <option value="elrond-erd-2">elrond-erd-2</option>
+        <option value="ethereum">ethereum</option>
+        <option value="ethereum-classic">ethereum-classic</option>
+        <option value="fantom">fantom</option>
+        <option value="filecoin">filecoin</option>
+        <option value="ftx-token">ftx-token</option>
+        <option value="hedera-hashgraph">hedera-hashgraph</option>
+        <option value="helium">helium</option>
+        <option value="internet-computer">internet-computer</option>
+        <option value="iota">iota</option>
+        <option value="litecoin">Australia</option>
+        <option value="matic-network">matic-network</option>
+        <option value="monero">monero</option>
+        <option value="near">near</option>
+        <option value="olympus">okb</option>
+        <option value="polkadot">polkadot</option>
+        <option value="ripple">ripple</option>
+        <option value="shiba-inu">shiba-inu</option>
+        <option value="solana">solana</option>
+        <option value="staked-ether">staked-ether</option>
+        <option value="stellar">stellar</option>
+        <option value="terra-luna">terra-luna</option>
+        <option value="terrausd">terrausd</option>
+        <option value="tether">tether</option>
+        <option value="tezos">tezos</option>
+        <option value="the-graph">the-graph</option>
+        <option value="the-sandbox">the-sandbox</option>
+        <option value="theta-token">theta-token</option>
+        <option value="tron">tron</option>
+        <option value="uniswap">uniswap</option>
+        <option value="usd-coin">usd-coin</option>
+        <option value="vechain">vechain</option>
+        <option value="wrapped-bitcoin">wrapped-bitcoin</option>
+        </select>
+        </div>
+
+    <div class="select_date">
+      <select id="sel_date" class="sel_date" name="sel_date">
+      <option value="Select Timeline">Select Timeline</option>
+      <option value="1d">1 Day</option>
+      <option value="5d">5 Days</option>
+      <option value="1mo">1 Month</option>
+      <option value="3mo">3 Months</option>
+      <option value="6mo">6 Months</option>
+      <option value="1y">1 year</option>
+      <option value="2y">2 years</option>
+      <option value="5y">5 years</option>
+      </select>
+      </div>
+
+      
+
+</form>
+</div>
+
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+  <!-- Full-width images with number and caption text -->
+
+  <div class="mySlides fade" style="display:block;">
+    <div class="numbertext">1 / 2</div>
+    <div id="results" class="results"></div>
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <!-- <div class="text">Caption Two</div> -->
+    <div id="stock_info" class="stock_info">
+      <!-- <table>
+        <tr>
+          <th>First name</th>
+          <th>Last name</th>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>Doe</td>
+        </tr>
+      </table> -->
+    </div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div class="dots">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+<!-- 
+<div class="circle"></div>
+<div class="load"></div> -->
+</body>
+<!-- <script>
+  console.log(1);
+fetch("result.json")
+.then(response=>response.json())
+.then(data=>{
+    console.log(data);
+    var div = document.getElementById("hello");
+    console.log(2);
+    div.innerHTML = div.innerHTML + "<p>"+ data["price"] +"</p>" +"<br>";
+    console.log(data["price"]);
+});
+</script> -->
+</html>
